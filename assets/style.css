@@ -20,19 +20,55 @@ body {
     height: 100%;
 }
 
+
+
 .container {
+    margin-top: 7.5vh;
     max-width: 100vw;
     max-height: 65vh;
 }
 
 .mid-container {
+    text-align: center;
     max-width: 80vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
-}
-.mid-container div {
     margin: 0 auto;
+}
+
+.container-video {
+  position: relative;
+  overflow: hidden;
+  width: 80vh;
+  margin: 0 auto;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.news-header {
+    background-image: url('assets/img/backgroundtitles.jpeg');
+    max-width: 80vw;
+}
+
+.news {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    }
+
+.box img {
+    width: 100%;
 }
 
 /* guitar page */
@@ -52,14 +88,14 @@ body {
 
 .product-boxes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    grid-column-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    
+    grid-column-gap: 2em;
     grid-row-gap: 2em;
     }
 
 .product-boxes img {
     width: 100%;
 }
-
 
 .box {
     border: 1px white solid;
@@ -98,9 +134,23 @@ body {
 .mid-col {
     max-width: 80%;
     margin: 0 auto;
+    padding: 2.5em;
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+}
+
+.box-mid-col-left {
+    background: url('../assets/img/plaugisdarkbg.jpeg');
+    border: 1px solid whitesmoke;
+    padding: 10px;
+}
+
+.box-mid-col-right {
+    background-image: url('assets/img/plaugisdarkbg.jpeg');
+    border: 1px solid whitesmoke;
+    padding: 10px;
 }
 
 /* place guitar order page */
@@ -146,6 +196,10 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
+
+.product {
+    margin-bottom: 50px;
+}
 .order-container {
     max-width: 60%;
     margin: 0 auto;
