@@ -50,8 +50,10 @@ body {
 }
 
 .news-header {
-    background-image: url('assets/img/backgroundtitles.jpeg');
+    background-image: url('img/backgroundtitles.jpeg');
     max-width: 80vw;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .news {
@@ -63,8 +65,15 @@ body {
     grid-row-gap: 2em;
     }
 
-.box img {
-    width: 100%;
+.box {
+    text-align: center;
+}
+
+.box > img {
+    max-width: 100%;
+    max-height: 30vh;
+    margin: 0 auto;
+    
 }
 
 /* guitar page */
