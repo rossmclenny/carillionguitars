@@ -5,6 +5,7 @@
     padding: 0;
     font-family: 'Cinzel', sans-serif;
     color: rgb(247, 246, 243);
+    
 }
 
 body {
@@ -49,84 +50,69 @@ body {
   height: 100%;
 }
 
-.news-header {
-    background-image: url('img/backgroundtitles.jpeg');
-    max-width: 80vw;
-    margin: 0 auto;
-    text-align: center;
-}
+/* news section - minmax needs fixing */
 
-.news {
+.wrapper-modal {
     max-width: 80vw;
+    padding: 4rem;
     margin: 0 auto;
-    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));    
     grid-column-gap: 2em;
     grid-row-gap: 2em;
-    }
+}
 
-.box {
+.container-modal {
+    border: 1px solid whitesmoke;
     text-align: center;
+    background-color: #32322E;
 }
 
-.box > img {
-    max-width: 100%;
-    max-height: 30vh;
-    margin: 0 auto; 
+.container-modal .modal-title {
+    border-bottom: 1px solid whitesmoke;
+    height: 5rem;
+    font-size: 2vw;
 }
 
-#myBtn {
-    background-color: lightgray;
-    color: dimgray;
-    padding: 2px;
+.container-modal img {
+    width: 100%;
+    height: 375px;
+    border-bottom: 1px solid whitesmoke;
 }
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 979px) {
+    div.container-modal h4 {
+    font-size: 18px;
+    
+  }
 }
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: dimgrey;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 978px) {
+    div.container-modal h4 {
+    font-size: 12px;
+  }
 }
 
-ul {
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 575px) {
+    div.container-modal h4 {
+    font-size: 10px;
+    
+  }
+}
+
+.modal-dialog .modal-content {
+    background: dimgray;
+}
+
+.modal-dialog .modal-content ul {
     list-style-type: none;
 }
 
-.modal-content img {
-    width: 100%;
-}
 
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
 
 /*footer */
 

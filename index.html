@@ -97,79 +97,125 @@
     <div class="iframe-container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/orXRt8WMbKg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-    <!---News Seection---->
-    <div class="news-header">
-        <h3>News</h3>
-    </div>
-        <div class="news">
-            <div class="box">
-                <h4>Engima Build</h4>
-                <img src="assets/img/newenigma.jpg">
-                <button id="myBtn">Read More</button>
 
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
 
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="assets/img/newenigma.jpg" alt="">
-                    <h4>The latest Enigma fresh from the bench...</h4>
-                    <p>Model Specs:</p>
-                    <ul>
-                        <li>Enigma 7FF</li>
-                        <li>Reversed Shredder headstock</li>
-                        <li>Set neck construction</li>
-                        <li>26" - 27" scale lengths</li>
-                        <li>Flamed Maple top</li>
-                        <li>Rippled Black Limba body</li>
-                        <li>9 piece Wenge / Flamed Maple neck</li>
-                        <li>Papua New Guinea Ebony fingerboard, bound in Ebony</li>
-                        <li>Flamed Maple / Ebony hand spliced head veneer</li>
-                        <li>Ebony reverse head veneer</li>
-                        <li>Hipshot locking tuners</li>
-                        <li>Graph Tech Black Tusq nut</li>
-                        <li>Jescar Stainless Steel frets</li>
-                        <li>Luminlay side dots</li>
-                        <li>Bare Knuckle Pickups Cold Sweat set</li>
-                        <li>ABM bridge saddles</li>
-                        <li>Dunlop duo strap locks</li>
-                        <li>Oil finished</li>
-                    </ul>
-                    <p>Photo - Will Satchwell Photography</p>
-                </div>
-
-                </div>
-            </div>
-
-            <div class="box">
-                <h4>Engima Build</h4>
-                <img src="assets/img/verminoustourposter.jpg">
-                <button id="myBtn">Read More</button>
-
-                <!-- The Modal -->
-                <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <img src="assets/img/verminoustourposter.jpg" alt="black dahlia murder ross mclennan viscera">
-                    <h4>Viscera join The Black Dahlia Murder and Rings of Saturn</h4>
-                    <p>UK deathcore band featuring Carillion artist, Ross McLennan, have announced they are heading out on a monster tour with death metal heavyweights The Black Dahlia Murder. The tour kicks off in Essen, Germany and has dates across all corners of mainland Europe and UK + Ireland. Be sure to check this out.</p>
-                    
-                </div>
-
-                </div>
-            </div>
-
-            <div class="box">
-                <h4>Engima Build</h4>
-                <img src="assets/img/newenigma.jpg">
-                <p>More info and photos can be viewed <a href="#" target="_blank">here</a></p>
-            </div>
-
+<!---News Seection---->
+<div class="wrapper-modal">
+    <!--Modal Left-->
+    <div class="container-modal">
+        <div class="modal-title">
+            <h4>New Enigma build</h4>
         </div>
+        <div class="left-modal-image">
+            <img src="assets/img/boxpic.png" alt="">
+        </div>
+        <p>View specs on this latest multiscale Enigma fresh off the bench at the workshop</p>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Read More</button>
 
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+             <!-- Modal content-->
+                <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h6 class="modal-title">New Enigma build</h6>
+                        <img src="assets/img/newenigma.jpg">
+                    </div>
+                    <div class="modal-body">
+                    <h5>Full Specs:</h5>
+                        <ul>
+                            <li>Enigma 7FF.</li>
+                            <li>Reversed Shredder headstock.</li>
+                            <li>Set neck construction.</li>
+                            <li>26" - 27" scale lengths.</li>
+                            <li>Flamed Maple top.</li>
+                            <li>Rippled Black Limba body.</li>
+                            <li>9 piece Wenge / Flamed Maple neck.</li>
+                            <li>Papua New Guinea Ebony fingerboard, bound in Ebony.</li>
+                            <li>Luminlay side dots.</li>
+                            <li>Bare Knuckle Pickups Cold Sweat set.</li>
+                            <li>Oil finished.</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!--Modal mid-->
+    <div class="container-modal">
+        <div class="modal-title">
+            <h4>Viscera announce tour w/TBDM and RoS</h4>
+        </div>
+        <div class="mid-modal-image">
+            <img src="assets/img/verminoustourposter.jpg" alt="">
+        </div>
+        <!-- Trigger the modal with a button -->
+        <div class="button-modal">
+            <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Read More</button>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+             <!-- Modal content-->
+                <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Viscera announce tour w/TBDM and RoS</h4>
+                    </div>
+                    <div class="modal-body">
+                    <img src="assets/img/verminoustourposter.jpg">
+                    <p>The band have announced the ‘Verminous European Tour 2021‘ is coming next January. It sees the band performing a massive 42 shows around Europe and the UK. The tour will kick off on 6th January in Essen, and finish 20th February in Stuttgart. They will be joined by rising acts Rings of Saturn and Viscera throughout the whole tour.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!--Modal right-->
+    <div class="container-modal">
+        <div class="modal-title">
+            <h4>New Cytotoxin!</h4>
+        </div>
+        <div class="right-modal-image">
+            <img src="assets/img/jason.png" alt="">
+        </div>
+        
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+             <!-- Modal content-->
+                <div class="modal-content">
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                    <p>Some text in the modal.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</div>   
 <!---FOOTER--->
 
 <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
@@ -186,7 +232,7 @@
                     </div>
     </footer>
 </div>
-    
+<!--END OF FOOTER-->  
 
 <script src="script.js"></script>
 </body>
