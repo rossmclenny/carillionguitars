@@ -104,11 +104,16 @@ body {
 }
 
 .modal-dialog .modal-content {
-    background: dimgray;
+    background-color: #32322E;
 }
 
 .modal-dialog .modal-content ul {
     list-style-type: none;
+}
+
+.container-modal .portrait-img {
+    width: 80%;
+    height: 100%;
 }
 
 
