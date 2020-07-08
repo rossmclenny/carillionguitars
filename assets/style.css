@@ -62,19 +62,19 @@ body {
     grid-row-gap: 2em;
 }
 
-.container-modal {
+.card {
     border: 1px solid whitesmoke;
     text-align: center;
     background-color: #32322E;
 }
 
-.container-modal .modal-title {
+.card .modal-title {
     border-bottom: 1px solid whitesmoke;
     height: 5rem;
     font-size: 2vw;
 }
 
-.container-modal img {
+.card img {
     width: 100%;
     height: 375px;
     border-bottom: 1px solid whitesmoke;
@@ -82,7 +82,7 @@ body {
 
 /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 @media screen and (min-width: 979px) {
-    div.container-modal h4 {
+    div.card h4 {
     font-size: 18px;
     
   }
